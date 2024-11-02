@@ -7,10 +7,10 @@ const Homepage = () => {
   return (
     <>
       <div className="p-5 xr:p-12 max-w-7xl flex justify-center items-center my-auto mx-auto min-h-screen">
-        <div className="p-6 lg:p-0 shadow-md rounded-3xl lg:justify-between flex justify-center items-center w-full  bg-[#fcfbfe]">
+        <div className="p-6 lg:p-0 shadow-lg rounded-3xl lg:justify-between flex justify-center items-center w-full  bg-[#fcfbfe]">
           <div className="flex items-center justify-center w-full lg:w-[47.5%]">
             <div className="max-w-[340px] w-full max-h-full bg-[#fbfbfe] flex flex-col lg:flex-row justify-center items-center">
-              <div className="w-full flex flex-col justify-center items-center">
+        ` `        <div className="w-full flex flex-col justify-center items-center">
                 <div className="flex flex-col justify-center items-center gap-4 lg:flex-row lg:justify-start w-full">
                   <Image
                   src={logo}
@@ -98,8 +98,9 @@ const Homepage = () => {
                     <Image
                       src={google}
                       alt="google img"
-                      width={1}
-                      height={1}
+                      width={25}
+                      height={25}
+                      quality={100}
                       className="w-6 h-6 flex"
                     />
                     <button
@@ -123,9 +124,10 @@ const Homepage = () => {
             <Image
               alt="hero"
               src={hero}
-              width={500}
-              height={500}
+              width={600}
+              height={600}
               quality={100}
+              layout="responsive"
               className="bg-[#efdfff] rounded-xl"
             />
           </div>
